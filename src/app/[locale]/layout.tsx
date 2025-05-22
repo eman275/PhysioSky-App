@@ -1,9 +1,9 @@
 import '@/app/globals.css'
 // import { Footer } from '@/shared/components/layout/footer/footer'
-import { Header } from '@/shared/components/layout/header'
 import Providers from '@/routes/_common/providers'
-import type { Metadata } from 'next'
+import { Header } from '@/shared/components/layout/header'
 import WhatsAppButton from '@/shared/components/layout/WhatsApp-btn'
+import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'PhysioSky ',
   description: 'physiotherapy clinic website ',
