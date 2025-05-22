@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "strictNullChecks": true,
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,7 +20,11 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@@/*": ["./*"],
+      "@/routes/*": ["./src/app/[locale]/(routes)/*"],
+      "@/shared/*": ["./src/shared/*"],
+      "@/feat/*": ["./src/features/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
